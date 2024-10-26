@@ -1,10 +1,9 @@
-
-import profile from './profile.png';
+import profile from './profile.jpeg';
 import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { } from '@fortawesome/free-solid-svg-icons';
+import { faBook } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-  name: "Hashir",
+  name: "Benjamin Heil",
   links: [
     {
       title: "About",
@@ -21,16 +20,13 @@ export const navigation = {
     {
       title: "Links",
       link: "/links",
-    },
-    {
-      title: "Blog",
-      link: "https://medium.com/@hashirshoaeb",
     }
   ],
 }
+
 export const intro = {
-  title: "Hey, I'm Hashir",
-  description: "A Computer Engineer creating mobile apps and static websites.",
+  title: "Hey, I'm Benjamin",
+  description: "A Senior Consultant & Java Developer specializing in cloud-native systems, distributed architectures, and event-driven microservices.",
   image: profile.src,
   buttons: [
     {
@@ -49,9 +45,9 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-    "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-    "When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
+    "I am a Senior Consultant and Java Developer with a background in theoretical physics, passionate about cloud-native development and distributed systems. My work focuses on building scalable, resilient microservices using Java, Spring Boot, and Kubernetes.",
+    "With extensive experience in event-driven architectures, I leverage Apache Kafka to create real-time data streaming solutions that enable seamless integration and processing. I bring deep expertise in designing and implementing systems that align with digital transformation goals, delivering value through agile development practices.",
+    "I am actively engaged in the evolving landscape of AI and Large Language Models (LLMs), exploring ways to integrate these cutting-edge technologies into real-world applications to drive innovation and efficiency. Currently, I am excited about expanding my horizons and settling permanently in Barcelona.",
   ],
 }
 
@@ -59,13 +55,23 @@ export const work = {
   title: "What I do",
   cards: [
     {
-      title: "Mobile App Development",
-      description: "I create pixel perfect iOS and Andriod apps using Flutter.",
+      title: "Cloud Native & Distributed Systems",
+      description: "Designing and implementing cloud-native solutions using Spring Boot, Kubernetes, and ArgoCD, focusing on scalability and resilience.",
       icons: null,
     },
     {
-      title: "Web Development",
-      description: "I create responsive static websites using Reactjs.",
+      title: "Event-Driven Architectures with Kafka",
+      description: "Building real-time, event-driven systems with Apache Kafka, enabling efficient data streaming, processing, and integration for complex workflows.",
+      icons: null,
+    },
+    {
+      title: "Digital Transformation Projects",
+      description: "Leading backend development for digital transformation initiatives, deploying microservices on cloud platforms, and driving agile requirements engineering.",
+      icons: null,
+    },
+    {
+      title: "AI & Large Language Models (LLMs)",
+      description: "Exploring and implementing applications of AI and LLMs, focusing on how these technologies can enhance software development and improve business processes.",
       icons: null,
     }
   ],
@@ -75,40 +81,42 @@ export const projects = {
   title: "Projects",
   cards: [
     {
-      title: "StarBook",
-      description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
+      title: "ESG/CSRD Reporting",
+      description: "Developed a data integrity framework for a Spring Boot & React-based Kafka connector, ensuring real-time data processing and compliance with ESG standards. Integrated CI/CD pipelines with GitHub Actions and deployed using ArgoCD in Azure.",
       icons: [
         {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
-        },
-        {
           icon: faGithub,
-          link: "https://github.com/hashirshoaeb/star_book",
+          link: "https://github.com/BLyndon",
         },
       ]
     },
     {
-      title: "QuranTalk",
-      description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
+      title: "Digital Transformation",
+      description: "Led backend development for microservices deployed on Azure Kubernetes Services, focusing on seamless deployment, scaling, and agile requirements engineering. Utilized Flyway for database migrations and collaborated closely with frontend teams.",
       icons: [
         {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
-        },
-        {
-          icon: faGooglePlay,
-          link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
+          icon: faGithub,
+          link: "https://github.com/BLyndon",
         },
       ]
     },
     {
-      title: "Portfolio",
-      description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
+      title: "Kafka Data Streaming Platform",
+      description: "Built a scalable event-driven architecture using Apache Kafka, enabling real-time data processing and analytics. Implemented Kafka Streams for complex joins and transformations, ensuring high throughput and low latency.",
       icons: [
         {
           icon: faGithub,
-          link: "https://github.com/hashirshoaeb/portfolio",
+          link: "https://github.com/BLyndon",
+        },
+      ]
+    },
+    {
+      title: "Particle Simulation",
+      description: "Research project at the University of Cologne focused on parallelized simulations of many-particle systems in C++. Published findings in a peer-reviewed journal, contributing to the field of computational physics.",
+      icons: [
+        {
+          icon: faBook,
+          link: "https://doi.org/10.1103/PhysRevB.100.134424",
         },
       ]
     },
@@ -117,16 +125,16 @@ export const projects = {
 
 export const contact = {
   title: "Get in touch",
-  description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at hashirshoaeb@gmail.com.",
+  description: "Feel free to reach out for consulting opportunities or technical collaborations. I'm always open to connecting over coffee and discussing new projects.",
   buttons: [
     {
       title: "Email Me",
-      link: "mailto:hashirshoaeb@gmail.com",
+      link: "mailto:Benjamin.Heil@mail.de",
       isPrimary: true,
     },
     {
       title: "Schedule Meeting",
-      link: "https://topmate.io/hashirshoaeb",
+      link: "https://calendly.com/benjamin-heil",
       isPrimary: false,
     },
   ]
@@ -134,36 +142,35 @@ export const contact = {
 
 // SEARCH ENGINE 
 export const SEO = {
-  // 50 - 60 char  
-  title: "Hashir Shoaib | Computer Engineer | Flutter | Reactjs developer",
-  description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
+  title: "Benjamin Heil | Senior Consultant | Java Developer | Cloud Native & Kafka",
+  description: "Senior Consultant specializing in cloud-native systems, event-driven architectures with Kafka, and digital transformation projects. Passionate about integrating AI and LLMs into innovative solutions.",
   image: profile.src,
 }
 
 export const links = {
   image: profile.src,
-  title: "@hashirshoaeb",
-  description: "Computer Engineer | Flutter | Reactjs Developer",
+  title: "@BLyndon",
+  description: "Senior Consultant | Java Developer | Cloud Native Enthusiast",
   cards: [
     {
-      title: "My website",
-      link: "https://hashirshoaeb.com/",
-    },
-    {
-      title: "QuranTalk App",
-      link: "https://www.qurantalk.app/",
-    },
-    {
-      title: "StarBook App",
-      link: "https://starbook.dev/",
-    },
-    {
       title: "My GitHub",
-      link: "https://github.com/hashirshoaeb/",
+      link: "https://github.com/BLyndon",
     },
     {
-      title: "My LinkedIn",
-      link: "https://www.linkedin.com/in/hashirshoaeb/",
+      title: "Published Research",
+      link: "https://doi.org/10.1103/PhysRevB.100.134424",
+    },
+    {
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/benjamin-heil/",
+    },
+    {
+      title: "Amigoscode Course",
+      link: "https://www.amigoscode.com/courses/microservices",
+    },
+    {
+      title: "Coursera ML & Data Science",
+      link: "https://www.coursera.org/",
     },
   ]
 }
