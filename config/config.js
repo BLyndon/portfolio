@@ -1,6 +1,6 @@
-import profile from './profile.jpeg';
+import profile from './profile.png';
 import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { faBook } from '@fortawesome/free-solid-svg-icons';
+import { faBook, faCloud } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
   name: "Benjamin Heil",
@@ -26,7 +26,7 @@ export const navigation = {
 
 export const intro = {
   title: "Hey, I'm Benjamin",
-  description: "A Senior Consultant & Java Developer specializing in cloud-native systems, distributed data-intensive systems, and event-driven microservices.",
+  description: "A Senior Consultant & Software Engineer specializing in cloud-native systems, distributed data-intensive systems, and event-driven microservices.",
   image: profile.src,
   buttons: [
     {
@@ -36,7 +36,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+      link: "https://www.linkedin.com/in/benjamin-heil-0b02b0197/",
       isPrimary: false,
     },
   ],
@@ -45,7 +45,7 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "I am a Senior Consultant and Java Developer with a background in theoretical physics, passionate about cloud-native development and distributed systems. My work focuses on building microservices using Java, Spring Boot, and Kubernetes",
+    "I am a Senior Consultant and Software Engineer in the financial sector with a background in theoretical physics, passionate about cloud-native development and distributed systems. My work focuses on building microservices using Java, Spring Boot, and Kubernetes.",
     "With a solid foundation in event-driven architectures, I leverage Confluent Kafka to create real-time data streaming solutions that enable seamless integration and processing. I bring deep expertise in designing and implementing data-intensive systems that align with digital transformation goals, delivering value through strong communication and expertise in requirements engineering.",
     "I am actively engaged in the evolving landscape of AI and Large Language Models (LLMs), exploring ways to integrate these cutting-edge technologies into real-world applications to drive innovation and efficiency. Currently, I am excited about expanding my horizons and settling permanently in Barcelona.",
 ],
@@ -55,15 +55,19 @@ export const work = {
   title: "What I do",
   cards: [
     {
-      title: "Cloud Native & GitOps",
-      description: "Designing and implementing cloud-native solutions using Spring Boot, Kubernetes, and ArgoCD, with a focus on GitOps for streamlined deployments.",
-      icons: null,
+      title: "Cloud Native Java Development",
+      description: "Designing and implementing cloud-native solutions using Spring Boot, Kubernetes, and ArgoCD, leveraging GitOps for streamlined deployments.",
+      icons: null
     },
     {
       title: "Event-Driven Architectures with Kafka",
       description: "Building event-driven systems with Confluent Kafka, focusing on data integrity and data quality in streaming, processing, and integration for complex workflows.",
       icons: null,
-    },    
+    },
+    {
+      title: "Communication",
+      description: "Collaborating with international teams and stakeholders to deliver high-quality solutions, ensuring alignment with business goals and technical requirements.",
+    },
     {
       title: "Digital Transformation",
       description: "Implementing solutions in data-intensive digital transformation projects, managing data migration strategies, and supporting MVP delivery and successful go-live in production environments.",
@@ -93,7 +97,7 @@ export const projects = {
       description: "Built a scalable event-driven architecture using Apache Kafka, enabling real-time data processing and analytics. Implemented Kafka Streams for complex joins and transformations, ensuring high throughput and low latency.",
     },
     {
-      title: "Particle Simulation",
+      title: "Many-Particle Simulation",
       description: "Research project at the University of Cologne focused on parallelized simulations of many-particle systems in C++. Published findings in a peer-reviewed journal, contributing to the field of computational physics.",
       icons: [
         {
@@ -103,6 +107,25 @@ export const projects = {
       ]
     },
   ],
+}
+
+export const education = {
+  title: "Education & Certifications",
+  cards: [
+    {
+      title: "MSc in Physics",
+      description: "University of Cologne, Germany",
+    },
+    // {
+    //   title: "IREB Requirements Engineering",
+    //   description: "Certified by the International Requirements Engineering Board for expertise in requirements engineering.",
+    // },
+    // {
+    //   title: "Kafka Certification CCDAK",
+    //   description: "Designing and implementing cloud-native solutions using Spring Boot, Kubernetes, and ArgoCD, with a focus on GitOps for streamlined deployments.",
+    //   icons: null,
+    // }
+  ]
 }
 
 export const contact = {
@@ -124,7 +147,7 @@ export const contact = {
 
 // SEARCH ENGINE 
 export const SEO = {
-  title: "Benjamin Heil | Senior Consultant | Java Developer | Cloud Native & Kafka",
+  title: "Benjamin Heil | Senior Consultant | Software Engineer | Cloud Native & Kafka",
   description: "Senior Consultant specializing in cloud-native systems, event-driven architectures with Kafka, and digital transformation projects. Passionate about integrating AI and LLMs into innovative solutions.",
   image: profile.src,
 }
@@ -132,27 +155,27 @@ export const SEO = {
 export const links = {
   image: profile.src,
   title: "@BLyndon",
-  description: "Senior Consultant | Java Developer | Cloud Native | Data Enthusiast",
+  description: "Senior Consultant | Software Engineer | Cloud Native | Data Enthusiast",
   cards: [
     {
       title: "My GitHub",
       link: "https://github.com/BLyndon",
     },
     {
-      title: "Published Research",
-      link: "https://doi.org/10.1103/PhysRevB.100.134424",
-    },
-    {
       title: "LinkedIn",
       link: "https://www.linkedin.com/in/benjamin-heil-0b02b0197/",
     },
     {
-      title: "Amigoscode Course",
-      link: "https://www.amigoscode.com/courses/microservices",
+      title: "Published Research",
+      link: "https://doi.org/10.1103/PhysRevB.100.134424",
     },
-    {
-      title: "Coursera ML & Data Science",
-      link: "https://www.coursera.org/",
-    },
+    // {
+    //   title: "Amigoscode Course",
+    //   link: "https://www.amigoscode.com/courses/microservices",
+    // },
+    // {
+    //   title: "Coursera ML & Data Science",
+    //   link: "https://www.coursera.org/",
+    // },
   ]
 }
