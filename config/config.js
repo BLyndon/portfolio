@@ -1,6 +1,11 @@
 import profile from './profile.png';
-import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { faBook, faCloud } from '@fortawesome/free-solid-svg-icons';
+import { FaReact, FaComments, FaBrain, FaRocket, FaChartPie, FaTools, FaGitAlt, FaGithub, FaLinkedin } from 'react-icons/fa'; // Import icons
+import { SiPython, SiCplusplus, SiJavascript, SiSap, SiApachemaven, SiJirasoftware, FaConfluence, SiFlyway, SiOpenapiinitiative, SiLangchain, SiKubernetes, SiHelm, SiApachekafka, SiSpring, SiMicrosoftazure, SiConfluence } from 'react-icons/si';
+import { LiaGlobeSolid } from "react-icons/lia";
+import { HiOutlineLightBulb } from "react-icons/hi";
+import { GiCamel } from "react-icons/gi";
+import { PiFileSqlLight } from "react-icons/pi";
+import { AiOutlineFileText } from 'react-icons/ai';
 
 export const navigation = {
   name: "Benjamin Heil",
@@ -57,57 +62,98 @@ export const work = {
     {
       title: "Cloud Native Java Development",
       description: "Designing and implementing cloud-native solutions using Spring Boot, Kubernetes, and ArgoCD, leveraging GitOps for streamlined deployments.",
-      icons: null
+      icons: [
+        { link: 'https://kubernetes.io', icon: SiKubernetes }, 
+        { link: 'https://helm.sh', icon: SiHelm },
+        { link: 'https://argoproj.github.io/argo-cd/', icon: FaGitAlt },
+        { link: 'https://azure.microsoft.com', icon: SiMicrosoftazure },
+      ],
     },
     {
       title: "Event-Driven Architectures with Kafka",
       description: "Building event-driven systems with Confluent Kafka, focusing on data integrity and data quality in streaming, processing, and integration for complex workflows.",
-      icons: null,
+      icons: [
+        { link: 'https://kafka.apache.org', icon: SiApachekafka },
+        { link: 'https://www.java.com', icon: SiSpring },
+        { link: 'https://www.java.com', icon: SiApachemaven },
+      ],
     },
     {
       title: "Communication",
       description: "Collaborating with international teams and stakeholders to deliver high-quality solutions, ensuring alignment with business goals and technical requirements.",
+      icons: [
+        { link: 'https://www.linkedin.com', icon: LiaGlobeSolid }, // Represents communication and collaboration
+        { link: 'https://www.linkedin.com', icon: SiConfluence }, // Represents documentation and collaboration
+        { link: 'https://www.linkedin.com', icon: SiJirasoftware }, // Represents documentation and collaboration
+      ],
     },
     {
-      title: "Digital Transformation",
-      description: "Implementing solutions in data-intensive digital transformation projects, managing data migration strategies, and supporting MVP delivery and successful go-live in production environments.",
-      icons: null,
+      title: "System Integration & Digital Transformation",
+      description: "Designing and implementing solutions in data-intensive digital transformation and integration projects, managing data migration strategies, and supporting MVP delivery and successful go-live in production environments.",
+      icons: [
+        { link: 'https://github.com', icon: SiOpenapiinitiative }, // Represents engineering and tool-based transformation processes
+        { link: 'https://github.com', icon: SiApachekafka }, // Represents engineering and tool-based transformation processes
+        { link: 'https://mvp.microsoft.com', icon: GiCamel } // Represents MVP delivery and fast deployments
+      ],
     },
     {
       title: "Analytics & LLMs",
       description: "Exploring and implementing applications based on LLMs, leveraging classical Machine Learning techniques to provide well-suited solutions for various use cases and challenges.",
-      icons: null,
+      icons: [
+        { link: 'https://www.tensorflow.org', icon: FaChartPie },
+        { link: 'https://huggingface.co', icon: FaBrain },
+        { link: 'https://www.python.org', icon: SiLangchain },
+      ],
     }
   ],
 }
+
 
 export const projects = {
   title: "Projects",
   cards: [
     {
-      title: "Sustainability Reporting",
+      title: "ESG/CSRD Reporting",
       description: "Developed a data integrity framework for a Spring Boot & React-based Kafka connector, ensuring real-time data processing and compliance with ESG standards. Integrated CI/CD pipelines with GitHub Actions and deployed using ArgoCD in Azure.",
+      icons: [
+        { link: 'https://kafka.apache.org', icon: SiApachekafka },
+        { link: 'https://azure.microsoft.com', icon: SiSpring }, // Represents cloud deployment
+        { link: 'https://azure.microsoft.com', icon: SiMicrosoftazure }, // Represents cloud deployment
+        { link: 'https://github.com/yourprojectlink', icon: FaReact }, // Represents sustainability/ESG
+      ]
     },
     {
       title: "Digital Transformation",
       description: "Led backend development for microservices deployed on Azure Kubernetes Services, focusing on seamless deployment, scaling, and agile requirements engineering. Utilized Flyway for database migrations and collaborated closely with frontend teams.",
+      icons: [
+        { link: 'https://azure.microsoft.com', icon: SiSpring }, // Represents cloud deployment
+        { link: 'https://github.com/yourprojectlink', icon: SiOpenapiinitiative }, // Represents transformation and agile processes
+        { link: 'https://azure.microsoft.com', icon: SiMicrosoftazure }, // Represents cloud/Kubernetes
+        { link: 'https://flywaydb.org', icon: SiFlyway }, // Represents database migrations
+      ]
     },
     {
-      title: "Kafka Data Streaming Platform",
-      description: "Built a scalable event-driven architecture using Apache Kafka, enabling real-time data processing and analytics. Implemented Kafka Streams for complex joins and transformations, ensuring high throughput and low latency.",
+      title: "SAP HANA Integration",
+      description: "TODO",
+      icons: [
+        { link: 'https://kafka.apache.org', icon: PiFileSqlLight }, // Represents data streaming and analytics
+        { link: 'https://linkedin.com', icon: SiSap }, // Represents scalable cloud infrastructure
+        { link: 'https://github.com/yourprojectlink', icon: SiPython }, // Represents real-time data processing
+        { link: 'https://github.com/yourprojectlink', icon: SiJavascript }, // Represents real-time data processing
+      ]
     },
     {
       title: "Many-Particle Simulation",
       description: "Research project at the University of Cologne focused on parallelized simulations of many-particle systems in C++. Published findings in a peer-reviewed journal, contributing to the field of computational physics.",
       icons: [
-        {
-          icon: faBook,
-          link: "https://doi.org/10.1103/PhysRevB.100.134424",
-        },
+        { link: 'https://github.com/yourresearchlink', icon: SiCplusplus }, // Represents GitHub for research code
+        { link: 'https://www.uni-koeln.de', icon: SiPython }, // Represents coding and simulations
+        { link: 'https://linkedin.com', icon: AiOutlineFileText } // Represents professional sharing on LinkedIn
       ]
     },
   ],
 }
+
 
 export const education = {
   title: "Education & Certifications",
