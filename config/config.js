@@ -92,7 +92,7 @@ export const work = {
       icons: [
         { link: 'https://www.openapis.org', icon: SiOpenapiinitiative }, // Represents engineering and tool-based transformation processes
         { link: 'https://kafka.apache.org', icon: SiApachekafka }, // Represents engineering and tool-based transformation processes
-        { link: 'https://mvp.microsoft.com', icon: GiCamel } // Represents MVP delivery and fast deployments
+        { link: 'https://camel.apache.org/', icon: GiCamel } // Represents MVP delivery and fast deployments
       ],
     },
     {
