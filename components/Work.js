@@ -65,21 +65,26 @@ export const Education = ({ title, cards }) => {
 
 export const Card = ({ title, description, icons }) => {
 	return (
-			<div className="card py-2 px-3 mx-sm-4 my-4 card-work" style={{ width: "20rem", borderRadius: "8px" }}>
-					<h4 className="text-primary m-0">{title}</h4>
-					<p className="text-dark mt-2">{description}</p>
-					<div className="d-flex justify-content-end align-items-center gap-2 flex-wrap">
-							{icons && icons.map((value, index) => (
-									<Link key={index} href={value.link}>
-											<a target="_blank" rel="noreferrer" className="d-flex align-items-center">
-													<value.icon className="icon-style" size="1.5em" />
-											</a>
-									</Link>
-							))}
-					</div>
+		<div className="card py-2 px-3 mx-sm-4 my-4 card-work" style={{ width: "20rem", borderRadius: "8px" }}>
+			<h4 className="text-primary m-0">{title}</h4>
+			<p className="text-dark mt-2">{description}</p>
+			<div className="d-flex justify-content-end align-items-center gap-2 flex-wrap">
+				{icons && icons.map((value, index) => (
+					value.link ? (
+						<Link key={index} href={value.link}>
+							<a target="_blank" rel="noreferrer" className="d-flex align-items-center">
+								<value.icon className="icon-style" size="1.5em" />
+							</a>
+						</Link>
+					) : (
+						<value.icon key={index} className="icon-style" size="1.5em" />
+					)
+				))}
 			</div>
+		</div>
 	);
 }
+
 
 export const CardRecangle = ({ title, description, icons }) => {
     return (
