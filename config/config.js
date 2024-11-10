@@ -1,8 +1,7 @@
 import profile from './profile.png';
-import { FaReact, FaComments, FaBrain, FaRocket, FaChartPie, FaTools, FaGitAlt, FaGithub, FaLinkedin } from 'react-icons/fa'; // Import icons
+import { FaReact, FaBrain, FaChartPie, FaGitAlt } from 'react-icons/fa';
 import { SiPython, SiCplusplus, SiJavascript, SiSap, SiApachemaven, SiJirasoftware, FaConfluence, SiFlyway, SiOpenapiinitiative, SiLangchain, SiKubernetes, SiHelm, SiApachekafka, SiSpring, SiMicrosoftazure, SiConfluence } from 'react-icons/si';
 import { LiaGlobeSolid } from "react-icons/lia";
-import { HiOutlineLightBulb } from "react-icons/hi";
 import { GiCamel } from "react-icons/gi";
 import { PiFileSqlLight } from "react-icons/pi";
 import { AiOutlineFileText } from 'react-icons/ai';
@@ -65,7 +64,7 @@ export const work = {
       icons: [
         { link: 'https://kubernetes.io', icon: SiKubernetes }, 
         { link: 'https://helm.sh', icon: SiHelm },
-        { link: 'https://argoproj.github.io/argo-cd/', icon: SiArgo },  // Corrected icon for ArgoCD
+        { link: 'https://argo-cd.readthedocs.io/en/stable/', icon: FaGitAlt },  // Corrected icon for ArgoCD
         { link: 'https://azure.microsoft.com', icon: SiMicrosoftazure },
       ],
     },
